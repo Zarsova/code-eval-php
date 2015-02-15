@@ -15,7 +15,7 @@ class E03SumOfPrimes
         $this->ary[$n] = true;
 
         $max = floor(sqrt($n));
-        for ($i = 2; $i <= $max; $i++) {
+        for ($i = 2; $i <= $max && $this->ary[$n]; $i++) {
             if ($this->ary[$i]) {
                 if ($n % $i == 0) {
                     $this->ary[$n] = false;
