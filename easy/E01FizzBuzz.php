@@ -21,7 +21,7 @@ class E01FizzBuzz
 
     function lineParser($line)
     {
-        list($fizz, $buzz, $number) = explode(" ", $line);
+        list($fizz, $buzz, $number) = explode(" ", rtrim($line));
         return join(" ", $this->fizzBuzz($fizz, $buzz, $number));
     }
 }
