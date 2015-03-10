@@ -20,5 +20,3 @@ class E01FizzBuzzTest extends PHPUnit_Framework_TestCase
             $this->logic->lineParser("2 7 15"));
     }
 }
-
-?>

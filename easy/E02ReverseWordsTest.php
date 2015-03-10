@@ -18,5 +18,3 @@ class E02ReverseWordsTest extends PHPUnit_Framework_TestCase
             $this->logic->lineParser("Hello CodeEval"));
     }
 }
-
-?>

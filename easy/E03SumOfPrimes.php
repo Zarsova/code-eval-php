@@ -49,4 +49,3 @@ if (basename(__FILE__) == basename($_SERVER['PHP_SELF'])) {
     $runner = new E03SumOfPrimes;
     echo $runner->sumOfPrimes(1000) . "\n";
 }
-?>

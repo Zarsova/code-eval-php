@@ -15,5 +15,3 @@ class E04PrimePalindromeTest extends PHPUnit_Framework_TestCase
             $this->logic->primePalindrome(1000));
     }
 }
-
-?>

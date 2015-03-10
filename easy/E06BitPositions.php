@@ -23,5 +23,3 @@ if (basename(__FILE__) == basename($_SERVER['PHP_SELF'])) {
         echo $runner->lineParser(rtrim($line)) . "\n";
     }
 }
-
-?>

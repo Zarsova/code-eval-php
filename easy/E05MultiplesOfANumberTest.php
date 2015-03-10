@@ -17,4 +17,3 @@ class E05MultiplesOfANumberTest extends PHPUnit_Framework_TestCase
             $this->logic->lineParser('17,16'));
     }
 }
-?>

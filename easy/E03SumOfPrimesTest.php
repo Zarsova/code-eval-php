@@ -16,5 +16,3 @@ class E03SumOfPrimesTest extends PHPUnit_Framework_TestCase
             $this->logic->sumOfPrimes(1000));
     }
 }
-
-?>

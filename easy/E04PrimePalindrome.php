@@ -36,5 +36,3 @@ if (basename(__FILE__) == basename($_SERVER['PHP_SELF'])) {
     $runner = new E04PrimePalindrome(1000);
     echo $runner->primePalindrome(1000);
 }
-
-?>
