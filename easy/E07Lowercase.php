@@ -9,12 +9,12 @@ class E07Lowercase
 }
 
 if (basename(__FILE__) == basename($_SERVER['PHP_SELF'])) {
-    if (!(is_readable($argv[1] && $fp = fopen($argv[1], "r")))) {
+    if (!(is_readable($argv[1]) && $fp = fopen($argv[1], "r"))) {
         die("can't read file");
     }
     $runner = new E07Lowercase();
     while (($line = fgets($fp)) != false) {
-        echo $runner->lineParse($line) . "\n";
+        echo $runner->lineParser($line) . "\n";
     }
     fclose($fp);
 }
