@@ -6,11 +6,14 @@ class E09FibonacciSeries
     {
         if ($num <= 1) {
             return $num;
-        } else if ($num == 2) {
-            return 1;
-        } else {
-            return $this->fibonacci($num - 1) + $this->fibonacci($num - 2);
         }
+        $fib = array(1, 0);
+        for ($i = 0; $i < $num; $i++) {
+            $next = array_sum($fib);
+            array_shift($fib);
+            array_push($fib, $next);
+        }
+        return $next;
     }
 
     function lineParser($line)
